@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden; /* Impede rolagem horizontal */
+}
+
+.container {
+  background-color: #fde4f2;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  height: 150px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffb6c1;
+}
+
+.container-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100vw;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.section1 {
+    display: flex;
+    width:  70%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+.title-header {
+  font-size: 2.5rem;
+  font-family: 'Edu NSW ACT Hand Pre', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+button {
+  height: 60px;
+  width: 120px;
+  border-radius: 30px;
+  background-color: brown;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: ease 1s;
+  margin-bottom: 10px;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+img {
+  border-radius: 30px;
+  height: auto;
+  width: 350px;
+}
+
+.text-image {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+
+
+
+@media (max-width: 600px) {
+  .header {
+    height: 110px;
+  }
+
+  .title-header {
+    font-size: 1.6rem;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-section {
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 10px 0;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 10px;
+  }
+
+  .section1,
+  .section2 {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  img {
+    width: 300px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 20px;
+  }
+
+  button {
+    height: 60px;
+    width: 140px;
+    font-size: 0.9rem;
+  }
+  .text-image {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+}
